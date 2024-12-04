@@ -12,6 +12,7 @@ RUN apt update && apt-get install -y --no-install-recommends \
 RUN curl -fsSL https://ollama.com/install.sh | sh
 
 RUN ollama --version
+RUN ollama serve
 # Télécharger les modèles nécessaires
 RUN ollama pull llama3.2 
 RUN ollama pull nomic-embed-text
