@@ -12,8 +12,8 @@ RUN apt update && apt-get install -y --no-install-recommends \
 RUN curl -fsSL https://ollama.com/install.sh | sh
 
 # Télécharger les modèles nécessaires
-RUN ollama pull llama3.2 && \
-    ollama pull nomic-embed-text
+RUN ollama pull llama3.2 
+RUN ollama pull nomic-embed-text
 
 # Installer les dépendances Python nécessaires pour l'application
 COPY requirements.txt /app/requirements.txt
