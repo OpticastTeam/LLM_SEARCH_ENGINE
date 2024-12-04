@@ -24,6 +24,10 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain.retrievers.multi_query import MultiQueryRetriever
 from typing import List, Tuple, Dict, Any, Optional
 
+
+
+
+
 # Set protobuf environment variable to avoid error messages
 # This might cause some issues with latency but it's a tradeoff
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
