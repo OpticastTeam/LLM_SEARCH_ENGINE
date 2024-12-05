@@ -10,11 +10,12 @@ services:
     volumes:
       - ollama_data:/ollama-data
 
-  streamlit_app:
+  llm_app:
+    image: yomien/search-engine:latest
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: streamlit_app
+    container_name: llm_app
     ports:
       - "8501:8501"
     environment:
